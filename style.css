@@ -1,0 +1,44 @@
+/*Bloc titre, logo et phrase d'accroche*/
+    /*Fond de la tête*/
+    body{
+        background-color: #ffffff;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        margin-bottom: 70px;
+    }
+    .logo-principal{
+        margin-right: 10px;
+    }
+    /*Disposition du titre et accroche*/
+    .titre-accroche{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between ;
+    }
+        /*Titre principal*/
+        h1{
+            color : transparent;
+            background-clip: text;
+            background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+            font-size:60px;
+            text-align:center;
+            margin-bottom: 0;
+        }
+        /*Phrase accroche*/
+        .phrase-accroche{
+            color : transparent;
+            background-clip: text;
+            background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+        }
+/*Fond du site*/
+.background{
+    background-color: #b4c6e7;
+}
+/*Texte d'accueil*/
+.txt-accueil{
+    color : #002e5f;
+    text-align:center;
+}
