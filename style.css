@@ -2,6 +2,7 @@
     /*Fond de la tête*/
     body{
         background-color: #ffffff;
+        margin: 0;
     }
     .header{
         display: flex;
@@ -30,15 +31,25 @@
         /*Phrase accroche*/
         .phrase-accroche{
             color : transparent;
+            font-size:40px;
             background-clip: text;
             background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
         }
 /*Fond du site*/
 .background{
     background-color: #b4c6e7;
+    padding: 20px;
 }
 /*Texte d'accueil*/
 .txt-accueil{
+    font-size:20px;
+    background-color: #ffffff;
     color : #002e5f;
     text-align:center;
+    border-radius: 25px 25px 25px 25px;
+    margin: 0 100px 0 100px;
+    padding: 20px;
+}
+.tuto-1 h2{
+    font-weight: bolder;
 }
