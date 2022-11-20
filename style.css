@@ -12,31 +12,32 @@
         background-color: #ffffff;
         margin: 0;
     }
+    /*Logo*/
     .logo-principal{
         margin-right: 10px;
     }
-    /*Disposition du titre et accroche*/
-    .titre-accroche{
-        display: flex;
-        flex-direction: column;
-        align-content: space-between ;
-    }
-    /*Titre principal*/
-    h1{
-        color : transparent;
-        background-clip: text;
-        background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
-        font-size:70px;
-        text-align:center;
-        margin-bottom: 0;
-    }
-    /*Phrase accroche*/
-    .phrase-accroche{
-        color : transparent;
-        font-size:50px;
-        background-clip: text;
-        background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
-    }
+    /*Disposition du titre et de la phrase d'accroche*/
+        .titre-accroche{
+            display: flex;
+            flex-direction: column;
+            align-content: space-between ;
+        }
+        /*Titre principal*/
+        h1{
+            color : transparent;
+            background-clip: text;
+            background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+            font-size:70px;
+            text-align:center;
+            margin-bottom: 0;
+        }
+        /*Phrase accroche*/
+        .phrase-accroche{
+            color : transparent;
+            font-size:50px;
+            background-clip: text;
+            background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+        }
 /*Navigation*/
 .menu {
     font-size: 40px;
@@ -73,7 +74,7 @@
     background-clip: text;
     background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
 }
-    /*Fond du site*/
+/*Fond du site*/
 .background{
     background-color: #b4c6e7;
     padding: 20px;
@@ -93,11 +94,48 @@
     display: flex;
     flex-direction: column;
     margin: 20px;
-}
+}   
+    /*Titre tutoriel*/
+    .tuto-accueil {
+        font-size: 30px;
+        display: flex;
+        padding:0;
+        background-color: transparent;
+        justify-content: space-around;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .tuto-accueil li {
+        list-style-type: none ;
+    }
+    .tuto-accueil a {
+        display:block;
+        min-width: 120px;
+        margin: 20px;
+        padding: 40px;
+        text-align: center;
+        color : transparent;
+        background-clip: text;
+        background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);
+        text-decoration: none;
+        transition: all 1s ;
+    }
+    .tuto-accueil a.actif {    
+        background-color: #000 ; 
+        color: #4b4daf ;
+        border-color: #4b4daf ;
+    }
+    .tuto-accueil a:hover,
+    .tuto-accueil a:hover.actif{
+        color : transparent;
+        background-clip: text;
+        background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+    }
     /*Tutoriel 1 et 2 */
     .tuto-1-2{
         display: flex;
         justify-content: center;
+        margin-top: 20px;
     }
         /*Description tutoriel*/
         .tuto-description{
@@ -114,7 +152,7 @@
             border-radius: 25px 25px 25px 25px;
         }
             /*Titre tutoriel n°1*/
-            .tuto-1 h2{
+            .tuto-1 h3{
                 font-weight: bolder;
                 font-size:35px;
                 color : transparent;
@@ -131,7 +169,7 @@
             border-radius: 25px 25px 25px 25px;
         }
             /*Titre tutoriel n°2*/
-            .tuto-2 h2{
+            .tuto-2 h3{
                 font-weight: bolder;
                 font-size:35px;
                 color : transparent;
@@ -153,7 +191,7 @@
             margin-top: 20px;
         }
             /*Titre tutoriel n°3*/
-            .tuto-3 h2{
+            .tuto-3 h3{
                 font-weight: bolder;
                 font-size:35px;
                 color : transparent;
@@ -175,13 +213,101 @@
                 padding: 50px 0px 50px 0px;
             }
             /*Titre tutoriel n°4*/
-            .tuto-4 h2{
+            .tuto-4 h3{
                 font-weight: bolder;
                 font-size:35px;
                 color : transparent;
                 background-clip: text;
                 background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);
             }
+/*Catégories*/
+.trie{
+    background-color: #ffffff;
+    border-radius: 25px 25px 25px 25px;
+    margin: 0 100px 0 100px;
+    padding: 20px;
+}
+    /*Choisir par*/
+    .trie h2{
+        font-size: 30px;
+        color: #230084;
+    }
+    /*Les 3 catégories*/
+    .categories{
+        font-size: 25px;
+        color: #002e5f;
+        text-align: center;
+    }
+    .categories {
+        font-size: 30px;
+        display: flex;
+        padding:0;
+        background-color: transparent;
+        justify-content: space-around;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .categories li {
+        list-style-type: none ;
+    }
+    .categories a {
+        display:block;
+        min-width: 120px;
+        margin: 20px;
+        padding: 40px;
+        text-align: center;
+        color : transparent;
+        background-clip: text;
+        background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);
+        text-decoration: none;
+        transition: all 1s ;
+    }
+    .categories a.actif {    
+        background-color: #000 ; 
+        color: #4b4daf ;
+        border-color: #4b4daf ;
+    }
+    .categories a:hover,
+    .categories a:hover.actif{
+        color : transparent;
+        background-clip: text;
+        background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+    }
+.tous-les-tutos {
+    font-size: 30px;
+    display: flex;
+    padding:0;
+    background-color: transparent;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.tous-les-tutos li {
+    list-style-type: none ;
+}
+.tous-les-tutos a {
+    display:block;
+    min-width: 120px;
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+    color : transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);
+    text-decoration-line: underline;
+    transition: all 1s ;
+}
+.tous-les-tutos a.actif {    
+    background-color: #000 ; 
+    color: #4b4daf ;
+    border-color: #4b4daf ;
+}
+.tous-les-tutos a:hover,
+.tous-les-tutos a:hover.actif{
+    color : transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+}
 /*Pied de page*/
 footer{
     color : #002e5f;
