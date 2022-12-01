@@ -52,9 +52,11 @@
 }
 .menu{
     display:flex;
+    justify-items: center;
+    text-align: center;
     min-width: 120px;
-    margin: 20px;
-    padding: 40px;
+    margin: 0px 400px 0px 400px;
+    padding: 20px;
 }
 a {   
     text-align: center;
@@ -70,8 +72,8 @@ a:hover{
     background-clip: text;
     background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
 }
-.menu a:active {    
-    font-weight: bolder;
+.menu li:active {    
+    font-weight: 900;
 }
 /*Fond du site*/
 .background{
@@ -86,140 +88,49 @@ a:hover{
     color : #002e5f;
     text-align:center;
     border-radius: 25px 25px 25px 25px;
-    margin: 0 100px 0 100px;
-    padding: 20px;
+    margin: 0 80px 0 80px;
+    padding: 20px 0px 20px 0px;
 }
-/*Tutoriel*/
-.tuto{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}   
-    /*Titre tutoriel*/
-    .tuto {
-        font-size: 30px;
+    /*Tutoriel accueil*/
+    .bloc-tuto{
         display: flex;
-        padding:0;
-        background-color: transparent;
-        justify-content: space-around;
-        margin-bottom: 0px;
-        margin-top: 0px;
+        justify-content: center;
+        margin-top: 20px;
     }
-    .tuto li {
-        list-style-type: none ;
+    .detail-tuto{
+        background-color: #ffffff;
+        margin-left: 80px;
+        width: 50%;
+        text-align: center;
+        border-radius: 25px 25px 25px 25px;
     }
-    .tuto a {
-        display:block;
-        min-width: 120px;
-        margin: 20px;
-        padding: 40px;
+    /*Disposition tuto page accueil*/
+    .presentation-tuto-accueil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .presentation-tuto-accueil h2{
         text-align: center;
         color : transparent;
         background-clip: text;
         background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);
         text-decoration: none;
-        transition: all 1s ;
     }
-    .tuto a.actif {    
-        background-color: #000 ; 
-        color: #4b4daf ;
-        border-color: #4b4daf ;
-    }
-    .tuto a:hover,
-    .tuto a:hover.actif{
+    .presentation-tuto-accueil h2:hover{
         color : transparent;
         background-clip: text;
         background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
     }
-    /*Tutoriel 1 et 2 */
-    .tuto-1-2{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
+.image-naruto-accueil{
+    padding: 100px 0 100px 0;
+}
+    /*Description tutoriel*/
+    .tuto-description{
+        padding: 30px;
+        color : #002e5f;
+        font-size:25px;
     }
-        /*Description tutoriel*/
-        .tuto-description{
-            padding: 30px;
-            color : #002e5f;
-            font-size:25px;
-        }
-        /*Tutoriel n°1*/
-        .tuto-1{
-            background-color: #ffffff;
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-            border-radius: 25px 25px 25px 25px;
-        }
-            /*Titre tutoriel n°1*/
-            .tuto-1 h3{
-                font-weight: bolder;
-                font-size:35px;
-                color : transparent;
-                background-clip: text;
-                background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);
-            }
-        /*Tutoriel n°2*/
-        .tuto-2{
-            background-color: #ffffff;
-            margin-right: 80px;
-            margin-left: 100px;
-            width: 50%;
-            text-align: center;
-            border-radius: 25px 25px 25px 25px;
-        }
-            /*Titre tutoriel n°2*/
-            .tuto-2 h3{
-                font-weight: bolder;
-                font-size:35px;
-                color : transparent;
-                background-clip: text;
-                background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);
-            }
-        /*Tutoriel 3 et 4 */
-    .tuto-3-4{
-        display: flex;
-        justify-content: center;
-    }
-        /*Tutoriel n°3*/
-        .tuto-3{
-            background-color: #ffffff;
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-            border-radius: 25px 25px 25px 25px;
-            margin-top: 20px;
-        }
-            /*Titre tutoriel n°3*/
-            .tuto-3 h3{
-                font-weight: bolder;
-                font-size:35px;
-                color : transparent;
-                background-clip: text;
-                background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);
-            }
-        /*Tutoriel n°4*/
-        .tuto-4{
-            background-color: #ffffff;
-            margin-right: 80px;
-            margin-left: 100px;
-            width: 50%;
-            text-align: center;
-            border-radius: 25px 25px 25px 25px;
-            margin-top: 20px;
-        }
-            /*Image du tutoriel n°4*/
-            .tuto-4 img{
-                padding: 50px 0px 50px 0px;
-            }
-            /*Titre tutoriel n°4*/
-            .tuto-4 h3{
-                font-weight: bolder;
-                font-size:35px;
-                color : transparent;
-                background-clip: text;
-                background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);
-            }
 /*Catégories*/
 .trie{
     background-color: #ffffff;
@@ -311,157 +222,58 @@ a:hover{
 }
 /*Difficulté*/
 .difficulte{
+    display: flex;
+    flex-direction: column;
+}
+.theme{
+    display: flex;
+    flex-direction: column;
+}
+.theme h2{
     color: #230084;
+    font-size: 30px;
     text-align: center
 }
-    /*Facile, moyenne et difficile*/
-    .facile-moyenne-difficile{
-       display: flex;
-       justify-content: space-between;  
-    }
-        /*Facile*/
-        .facile{
-            background-color: #ffffff;
-            border-radius: 25px 25px 25px 25px;
-            margin: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-        }
-            .titre-difficulte-facile{
-                font-size: 25px;
-                color: #002e5f;
-                text-align: center;
-            }
-                /*Tutoriel facile*/
-                .tuto-facile{
-                display: flex;
-                justify-content: center;
-                margin-top: 20px;  
-                }
-                    /*Tutoriel n°2*/
-                    .tuto-2-facile{
-                        background-color: #ffffff;
-                        margin-left: 80px;
-                        width: 50%;
-                        text-align: center;
-                        border-radius: 25px 25px 25px 25px;
-                        margin-top: 20px;
-                    }
-                    /*Tutoriel n°3*/
-                    .tuto-3-facile{
-                        background-color: #ffffff;
-                        margin-left: 80px;
-                        width: 50%;
-                        text-align: center;
-                        border-radius: 25px 25px 25px 25px;
-                        margin-top: 20px;
-                    }
-        /*Moyenne*/
-        .moyenne{
-            background-color: #ffffff;
-            border-radius: 25px 25px 25px 25px;
-            margin: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-        }
-            .titre-difficulte-moyenne{
-                font-size: 25px;
-                color: #002e5f;
-                text-align: center;
-            }
-                    /*Tutoriel n°1*/
-                    .tuto-1-moyenne{
-                        background-color: #ffffff;
-                        margin-left: 450px;
-                        width: 50%;
-                        text-align: center;
-                        border-radius: 25px 25px 25px 25px;
-                        margin-top: 20px;
-                    }
-                        .tuto-1-difficile img{
-                            margin: 20px;
-                        }
-/*Temps*/
-                        
-        /*Difficile*/
-        .difficile{
-            background-color: #ffffff;
-            border-radius: 25px 25px 25px 25px;
-            margin: 10px;
-            padding: 20px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-        }
-            .titre-difficulte-difficile{
-                font-size: 25px;
-                color: #002e5f;
-                text-align: center;
-            }
-                    /*Tutoriel n°4*/
-                    .tuto-4-difficile{
-                        background-color: #ffffff;
-                        margin-left: 450px;
-                        width: 50%;
-                        text-align: center;
-                        border-radius: 25px 25px 25px 25px;
-                        margin-top: 20px;
-                    }
-                        .tuto-4-difficile img{
-                            margin: 20px;
-                        }
-/*Temps*/
 .temps{
+    display: flex;
+    flex-direction: column;
+}
+.temps h2{
     color: #230084;
+    font-size: 30px;
     text-align: center
 }
-    /*Court, moyen et long*/
-    .court-moyen-long{
-       display: flex;
-       justify-content: space-between;  
-    }
-        /*Image*/
-        .court-moyen-long img{
-            padding: 20px 0px 20px 0px;
-        }
-        /*court*/
-        .court{
-            background-color: #ffffff;
-            border-radius: 25px 25px 25px 25px;
-            margin: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-        }
-        /*Moyen*/
-        .moyen{
-            background-color: #ffffff;
-            border-radius: 25px 25px 25px 25px;
-            margin: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-        }
-        /*Long*/
-        .long{
-            background-color: #ffffff;
-            border-radius: 25px 25px 25px 25px;
-            margin: 10px;
-            padding: 20px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-        }	
+/*Niveaux de difficulté*/
+.niveau{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border-radius: 25px 25px 25px 25px;
+    margin: 10px;
+    padding: 20px;
+    height: 400px;    
+}
+.niveau img{
+    padding: 20px 0px 20px 0px;
+}
+.niveau h3{
+    font-size: 25px;
+    color: #002e5f;
+    text-align: center;
+}
+.niveau a:hover{
+    color : transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+}
+.text-niveau{
+	font-size: 30px;
+    color: #230084;
+	background-color:transparent;
+	text-align: center;
+}
+
 /*Thème*/
 .theme{
     color: #230084;
@@ -504,778 +316,33 @@ a:hover{
             flex-direction: column;
         }
 /*Tous les tutoriels*/
-.txt-tuto{
+.tuto p{
     font-size: 30px;
     color: #230084;
-    text-align: center
 }
-/*Tutoriel Happy*/
-.img-happy h4{
-    color : #002e5f;
-    font-size:30px;
-}
-.tuto-happy p{
-    color : #002e5f;
-    font-size:25px;
-}
-/*Vidéo de Happy*/
-.video-happy{
+/*Vidéo des tutos*/
+.video-tuto{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-    .video-tuto-happy{
-        margin-left: 70px;
-        text-align: center;
-    }
-/*Tutoriel Pikachu en pyjama*/
-.img-pikachu-en-pyjama h4{
-    color : #002e5f;
-    font-size:30px;
-}
-.tuto-pikachu-en-pyjama p{
-    color : #002e5f;
-    font-size:25px;
-}
-/*Vidéo de Pikachu en pyjama*/
-.video-pikachu-en-pyjama{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-    .video-tuto{
-        margin-left: 820px;
-        text-align: center;
-    }
-/*Vidéo de Pikachu en pyjama*/
-.video-pikachu-en-pyjama{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-    .video-tuto-pikachu-en-pyjama{
-        margin-left: 820px;
-        text-align: center;
-    }
-/*Tutoriel Naruto chez Ichiraku*/
-.img-naruto-chez-ichiraku h4{
-    color : #002e5f;
-    font-size:30px;
-}
-.tuto-naruto-chez-ichiraku p{
-    color : #002e5f;
-    font-size:25px;
-}
-/*Vidéo de Naruto chez Ichiraku*/
-.video-naruto-chez-ichiraku{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-    .video-tuto{
-        margin-left: 820px;
-        text-align: center;
-    }
-/*Vidéo de Naruto chez Ichiraku*/
-.video-naruto-chez-ichiraku{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-    .video-tuto-naruto-chez-ichiraku{
-        margin-left: 80px;
-        text-align: center;
-    }
-/*Tutoriel Pikachu*/
-.img-pikachu h4{
-    color : #002e5f;
-    font-size:30px;
-}
-.tuto-pikachu p{
-    color : #002e5f;
-    font-size:25px;
-}
-/*Vidéo de Pikachu*/
-.video-pikachu{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-    .video-tuto{
-        margin-left: 70px;
-        text-align: center;
-    }
-/*Vidéo de Pikachu*/
-.video-pikachu{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-    .video-tuto-pikachu{
-        margin-left: 830px;
-        text-align: center;
-    }
     /*Images-Tuto*/
-    .img-1-2-3{
+    .bloc-images{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-content: center;
         margin-top: 20px;
     }
-        .img-1{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-2{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-3{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-4-5-6{
+    .image-seule{
         display: flex;
-        justify-content: center;
-        margin-top: 20px;
+        flex-direction: column;
+        justify-items: center;   
     }
-        .img-4{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-5{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-6{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-7-8-9{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
+    .image-seule h2{
+        font-size:25px;
+        color : #002e5f;
+        text-align: center;
     }
-        .img-7{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-8{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-9{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-10-11-12{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-10{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-11{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-12{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-13-14-15{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-13{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-14{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-15{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-.img-16-17-18{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-16{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-17{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-18{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-.img-19-20-21{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-19{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-20{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-21{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-.img-22-23-24{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-22{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-23{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-24{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-.img-25-26-27{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-25{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-26{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-27{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-.img-28-29-30{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-28{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-29{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-30{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-.img-31-32-33{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-31{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-32{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-33{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-.img-34-35-36{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-34{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-35{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-36{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-coloré{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-37-38-39{
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-            .img-37{
-                margin-left: 80px;
-                width: 50%;
-                text-align: center;
-            }
-            .img-38{
-                margin-left: 80px;
-                width: 50%;
-                text-align: center;
-            }
-            .img-39{
-                margin-left: 80px;
-                width: 50%;
-                text-align: center;
-            }
-        .img-40-41-42{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-40{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-41{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-42{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-.img-43-44-45{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-43{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-44{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-45{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-46-47-48{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-46{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-47{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-48{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-49-50-51{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-49{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-50{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-51{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-52-53-54{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-52{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-53{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-54{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-55-56-57{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-55{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-56{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-57{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-58-59-60{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-58{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-59{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-60{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-61-62-63{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-61{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-62{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-63{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-64-65-66{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-64{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-65{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-66{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-67-68-69{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-67{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-68{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-69{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-70-71-72{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-70{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-71{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-72{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-73-74-75{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-73{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-74{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-75{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-76-77-78{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-76{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-77{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-78{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-79-80-81{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-79{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-80{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-81{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-82-83-84{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-82{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-83{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-84{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-85-86-87{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-85{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-86{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-87{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-88-89-90{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-88{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-89{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-90{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-91-92-93{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-91{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-92{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-93{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-94-95-96{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-94{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-95{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-96{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-    .img-97-98{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-        .img-97{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
-        .img-98{
-            margin-left: 80px;
-            width: 50%;
-            text-align: center;
-        }
 /*Pied de page*/
 footer{
     color : #002e5f;
