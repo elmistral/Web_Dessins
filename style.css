@@ -91,6 +91,9 @@ a:hover{
     margin: 0 80px 0 80px;
     padding: 20px 0px 20px 0px;
 }
+    .txt-accueil img{
+        border-radius: 25px 25px 25px 25px;
+    }
     /*Tutoriel accueil*/
     .bloc-tuto{
         display: flex;
