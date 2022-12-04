@@ -75,6 +75,26 @@ a:hover{
 .menu li:active {    
     font-weight: 900;
 }
+/*Sous menu déroulant*/
+ul ul{
+    display: none;
+}
+li:hover ul.sous-menu{    
+    display: flex;
+    flex-direction: column;
+}
+.sous-menu{
+    padding-left: 200px;
+    text-align: start; 
+}
+.sous-menu li:hover ul.sous-sous-menu{
+    display: flex;
+    flex-direction: column;
+}
+.sous-sous-menu{
+    padding-left: 50px;
+    text-align: start;
+}
 /*Fond du site*/
 .background{
     background-color: #b4c6e7;
