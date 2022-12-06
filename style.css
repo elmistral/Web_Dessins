@@ -388,7 +388,7 @@ footer{
     .abonnement input{
         color : #ffffff;
         background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);       
-        cursor: url("/images/Logo/curseur-enveloppe.png"), pointer;
+        cursor: url("/images/Logo/curseur-enveloppe.PNG"), pointer;
         padding: 10px; 
         font-size: 15px;
         font-weight: 700;
@@ -419,7 +419,7 @@ footer{
     .envoyer input{
         color : #ffffff;
         background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);       
-        cursor: url("/images/Logo/curseur-crayon.png"), pointer ;
+        cursor: url("/images/Logo/curseur-crayon.PNG"), pointer ;
         padding: 10px; 
         font-size: 15px;
         font-weight: 700;
