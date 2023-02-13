@@ -10,6 +10,7 @@
     body{
         background-color: #ffffff;
         margin: 0;
+        height: auto;
     }
     /*Logo*/
     .logo-principal{
@@ -275,7 +276,7 @@ li:hover ul.sous-menu{
     border-radius: 25px 25px 25px 25px;
     margin: 10px;
     padding: 20px;
-    height: 400px;    
+    height: auto;    
 }
 .niveau img{
     padding: 20px 0px 20px 0px;
@@ -302,8 +303,12 @@ li:hover ul.sous-menu{
     color: #230084;
     text-align: center
 }
-    /*Fairy Tail, Naruto et Pokemon*/
-    .fairytail-naruto-pokemon{
+    /*Fairy Tail et Naruto*/
+    .fairytail-naruto{
+       display: flex;
+    }
+    /*Pokemon et animaux*/
+    .pokemon-animaux{
        display: flex;
     }
         /*Fairy Tail*/
@@ -330,6 +335,16 @@ li:hover ul.sous-menu{
         }
         /*Pokemon*/
         .pokemon{
+            background-color: #ffffff;
+            border-radius: 25px 25px 25px 25px;
+            margin: 10px;
+            padding: 20px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        /*Animaux*/
+        .animaux{
             background-color: #ffffff;
             border-radius: 25px 25px 25px 25px;
             margin: 10px;
