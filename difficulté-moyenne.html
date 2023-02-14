@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <!--CSS et Caractère-->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--Titre du site et favicon-->
+        <title>Web Dessins</title>
+        <link rel="icon" type="image/x-icon" href="images/Logo/Logo_Web_Dessin.png">
+    </head>
+    <body>
+        <!--Titre principal, logo et phrase d'accroche-->
+        <div class="header">
+            <div class="logo-principal">
+                <img src="images/Logo/Logo_Web_Dessin.png" alt="Logo Web dessins" width="220">
+            </div>
+            <div class="titre-accroche">    
+                <h1>Web Dessins</h1>
+                <p class="phrase-accroche">Le plaisir de dessiner</p>
+            </div>
+        </div>
+        <!--Menu-->
+        <ul class="menu">
+            <li>
+              <a href="index.html">Accueil</a>
+            </li>
+            <li class="menu-tuto">
+                <a href="tutoriel.html">Tutoriel</a>
+                <ul class="sous-menu">
+                    <li><a href="difficulte.html">Difficulté</a>
+                        <ul class="sous-sous-menu">
+                            <li><a href="difficulte-facile.html">Facile</a></li>
+                            <li><a href="difficulté-moyenne.html">Moyenne</a></li>
+                            <li><a href="difficulte-difficile.html">Difficile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="temps.html">Temps</a>
+                        <ul class="sous-sous-menu">
+                            <li><a href="temps-court.html">Court</a></li>
+                            <li><a href="temps-moyen.html">Moyen</a></li>
+                            <li><a href="temps-long.html">Long</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="theme.html">Thème</a>
+                        <ul class="sous-sous-menu">
+                            <li><a href="fairy-tail.html">Fairy Tail</a></li>
+                            <li><a href="naruto.html">Naruto</a></li>
+                            <li><a href="pokemon.html">Pokémon</a></li>
+                            <li><a href="animaux.html">Animaux</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tous_les_tutos.html">Tous les tutoriels</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="galerie-page-1.html">Ma galerie</a>
+            </li>
+        </ul>
+        <!--Fond du site--> 
+        <div class="background">
+            <!--Texte accueil-->
+            <div class="text-niveau">
+                <h2>Difficulté moyenne</h2>
+            </div>
+            <!--Tutoriel d'accueil-->
+            <div class="tuto-accueil">
+                <!--Tutoriel 1-->
+                <div class="bloc-tuto">
+                        <div class="detail-tuto">
+                        <a href="happy.html" class="presentation-tuto-accueil">
+                            <h2>Happy</h2> 
+                            <img src="images/Tutoriel/Happy/Happy.jpg" alt="Happy" width="400" height="500">
+                            <p class="tuto-description">Dans ce tutoriel, je vais vous expliquez comment dessiner Happy. Happy est un personnage de fiction du manga Fairy Tail.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>                   
+        </div>
+    </body>
+    <footer>
+        <div class="commentaire">
+            <form action="Laisser un commentaire" method="get" class="newsletter">
+                <div class="comment">
+                    <p>Commentaire</p>
+                    <div class="zone-text">
+                        <label for="comment"> Laisser un commentaire :</label>
+                        <textarea id="commentaire" name="commentaire" rows="5" cols="33" maxlength="200">Écrire votre commentaire ici...</textarea>
+                    </div>
+                </div>
+                <div class="envoyer">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </form>
+        </div>
+        <div class="copyright">
+            <p>© 2022 Web dessins créé par MARMAROLI Éléa 2nde 4</p>
+        </div>
+        <div class="formulaire">
+            <form action="Recevez une newsletter" method="get" class="newsletter">
+                <div class="email">
+                    <p>Newsletter</p>
+                    <label for="email"> Entrer votre adresse mail :</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="abonnement">
+                    <input type="submit" value="S'abonner">
+                </div>
+            </form>
+        </div>
+    </footer>
+</html>

@@ -1,0 +1,457 @@
+/*Bloc titre, logo et phrase d'accroche*/
+.header{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+    /*Fond de la tête*/
+    body{
+        background-color: #ffffff;
+        margin: 0;
+        height: auto;
+    }
+    /*Logo*/
+    .logo-principal{
+        margin-right: 10px;
+    }
+    /*Disposition du titre et de la phrase d'accroche*/
+        .titre-accroche{
+            display: flex;
+            flex-direction: column;
+            align-content: space-between ;
+        }
+        /*Titre principal*/
+        h1{
+            color : transparent;
+            background-clip: text;
+            background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+            font-size:70px;
+            text-align:center;
+            margin-bottom: 0;
+        }
+        /*Phrase accroche*/
+        .phrase-accroche{
+            color : transparent;
+            font-size:50px;
+            background-clip: text;
+            background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+        }
+/*Navigation*/
+.menu {
+    font-size: 40px;
+    display: flex;
+    padding:0;
+    background-color: transparent;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.menu li {
+    list-style-type: none ;
+}
+.menu{
+    display:flex;
+    justify-items: center;
+    text-align: center;
+    min-width: 120px;
+    margin: 0px 400px 0px 400px;
+    padding: 20px;
+}
+a {   
+    text-align: center;
+    color : transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);
+    text-decoration: none;
+    transition: all 1s ;
+    font-size: 30px;
+}
+a:hover{
+    color : transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+}
+.menu li:active {    
+    font-weight: 900;
+}
+/*Sous menu déroulant*/
+ul ul{
+    display: none;
+}
+li:hover ul.sous-menu{    
+    display: flex;
+    flex-direction: column;
+}
+.sous-menu{
+    padding-left: 200px;
+    text-align: start; 
+}
+.sous-menu li:hover ul.sous-sous-menu{
+    display: flex;
+    flex-direction: column;
+}
+.sous-sous-menu{
+    padding-left: 50px;
+    text-align: start;
+}
+/*Fond du site*/
+.background{
+    background-color: #b4c6e7;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+/*Texte d'accueil*/
+.txt-accueil{
+    font-size:25px;
+    background-color: #ffffff;
+    color : #002e5f;
+    text-align:center;
+    border-radius: 25px 25px 25px 25px;
+    margin: 0 80px 0 80px;
+    padding: 20px 0px 20px 0px;
+}
+    .txt-accueil img{
+        border-radius: 25px 25px 25px 25px;
+    }
+    /*Tutoriel accueil*/
+    .bloc-tuto{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .detail-tuto{
+        background-color: #ffffff;
+        margin-left: 80px;
+        width: 50%;
+        text-align: center;
+        border-radius: 25px 25px 25px 25px;
+    }
+    /*Disposition tuto page accueil*/
+    .presentation-tuto-accueil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .presentation-tuto-accueil h2{
+        text-align: center;
+        color : transparent;
+        background-clip: text;
+        background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);
+        text-decoration: none;
+    }
+    .presentation-tuto-accueil h2:hover{
+        color : transparent;
+        background-clip: text;
+        background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+    }
+.image-naruto-accueil{
+    padding: 100px 0 100px 0;
+}
+    /*Description tutoriel*/
+    .tuto-description{
+        padding: 30px;
+        color : #002e5f;
+        font-size:25px;
+    }
+/*Catégories*/
+.trie{
+    background-color: #ffffff;
+    border-radius: 25px 25px 25px 25px;
+    margin: 0 100px 0 100px;
+    padding: 20px;
+}
+    /*Choisir par*/
+    .trie h2{
+        font-size: 30px;
+        color: #230084;
+    }
+    /*Les 3 catégories*/
+    .categories{
+        font-size: 25px;
+        color: #002e5f;
+        text-align: center;
+    }
+    .categories {
+        font-size: 30px;
+        display: flex;
+        padding:0;
+        background-color: transparent;
+        justify-content: space-around;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .categories li {
+        list-style-type: none ;
+    }
+    .categories a {
+        display:block;
+        min-width: 120px;
+        margin: 20px;
+        padding: 40px;
+        text-align: center;
+        color : transparent;
+        background-clip: text;
+        background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);
+        text-decoration: none;
+        transition: all 1s ;
+    }
+    .categories a.actif {    
+        background-color: #000 ; 
+        color: #4b4daf ;
+        border-color: #4b4daf ;
+    }
+    .categories a:hover,
+    .categories a:hover.actif{
+        color : transparent;
+        background-clip: text;
+        background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+    }
+/*Tous les tutoriels*/
+.tous-les-tutos {
+    font-size: 30px;
+    display: flex;
+    padding:0;
+    background-color: transparent;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.tous-les-tutos li {
+    list-style-type: none ;
+}
+.tous-les-tutos a {
+    display:block;
+    min-width: 120px;
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+    color : transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);
+    text-decoration: none;
+    transition: all 1s ;
+}
+.tous-les-tutos a.actif {    
+    background-color: #000 ; 
+    color: #4b4daf ;
+    border-color: #4b4daf ;
+}
+.tous-les-tutos a:hover,
+.tous-les-tutos a:hover.actif{
+    color : transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+}
+/*Difficulté*/
+.difficulte{
+    display: flex;
+    flex-direction: column;
+}
+.theme{
+    display: flex;
+    flex-direction: column;
+}
+.theme h2{
+    color: #230084;
+    font-size: 30px;
+    text-align: center
+}
+.temps{
+    display: flex;
+    flex-direction: column;
+}
+.temps h2{
+    color: #230084;
+    font-size: 30px;
+    text-align: center
+}
+/*Niveaux de difficulté*/
+.niveau{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border-radius: 25px 25px 25px 25px;
+    margin: 10px;
+    padding: 20px;
+    height: auto;    
+}
+.niveau img{
+    padding: 20px 0px 20px 0px;
+}
+.niveau h3{
+    font-size: 25px;
+    color: #002e5f;
+    text-align: center;
+}
+.niveau a:hover{
+    color : transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+}
+.text-niveau{
+	font-size: 30px;
+    color: #230084;
+	background-color:transparent;
+	text-align: center;
+}
+
+/*Thème*/
+.theme{
+    color: #230084;
+    text-align: center
+}
+    /*Fairy Tail et Naruto*/
+    .fairytail-naruto{
+       display: flex;
+    }
+    /*Pokemon et animaux*/
+    .pokemon-animaux{
+       display: flex;
+    }
+        /*Fairy Tail*/
+        .fairytail{
+            background-color: #ffffff;
+            border-radius: 25px 25px 25px 25px;
+            margin: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        /*Naruto*/
+        .naruto{
+            background-color: #ffffff;
+            border-radius: 25px 25px 25px 25px;
+            margin: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        /*Pokemon*/
+        .pokemon{
+            background-color: #ffffff;
+            border-radius: 25px 25px 25px 25px;
+            margin: 10px;
+            padding: 20px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        /*Animaux*/
+        .animaux{
+            background-color: #ffffff;
+            border-radius: 25px 25px 25px 25px;
+            margin: 10px;
+            padding: 20px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+/*Tous les tutoriels*/
+.tuto p{
+    font-size: 30px;
+    color: #230084;
+}
+/*Vidéo des tutos*/
+.video-tuto{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+    /*Images-Tuto*/
+    .bloc-images{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        margin-top: 20px;
+    }
+    .image-seule{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;   
+    }
+    .image-seule h2{
+        font-size:25px;
+        color : #002e5f;
+        text-align: center;
+    }
+/*Galerie*/
+.galerie{
+    padding-bottom: 10px;
+}
+.page{
+    color: #230084;
+    text-align: center;
+    margin-top: 30px;
+}
+    .numero-page{
+        margin-right: 40px;
+    }
+/*Pied de page*/
+footer{
+    font-size:25px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+    .copyright{
+        color : #002e5f;
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+    .comment p{
+        text-decoration: underline;
+    }
+    .comment{
+        color : #002e5f;
+    }
+    .abonnement input{
+        color : #ffffff;
+        background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);       
+        cursor: url("/images/Logo/curseur-enveloppe.PNG"), pointer;
+        padding: 10px; 
+        font-size: 15px;
+        font-weight: 700;
+        margin: 10px;
+    }
+    .abonnement input:hover{
+        background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+    }
+    .zone-text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;        
+    }
+    #commentaire{
+        justify-self: center;
+        border-radius: 5px;
+        border: 1px solid #002e5f;
+        box-shadow: 1px 1px 1px #002e5f;
+        color: #ffffff;
+        background-color: #b4c6e7;
+    }
+    .email p{
+        text-decoration: underline;
+    }
+    .email{
+        color : #002e5f;
+    }
+    .envoyer input{
+        color : #ffffff;
+        background-image: linear-gradient(to right,#1f0074,#25008a,#0300c0,#221fd3);       
+        cursor: url("/images/Logo/curseur-crayon.PNG"), pointer ;
+        padding: 10px; 
+        font-size: 15px;
+        font-weight: 700;
+        margin: 10px;
+    }
+    .envoyer input:hover{
+        background-image: linear-gradient(to right,#d736b4,#ff0800,#e1a102,#31d514,#00a9b8,#4073d9,#9103de);
+    }
