@@ -381,6 +381,14 @@ li:hover ul.sous-menu{
         color : #002e5f;
         text-align: center;
     }
+/*Tutoriel*/
+.titre-tuto{
+    font-size: 60px;
+    color: #230084;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
 /*Galerie*/
 .galerie{
     padding-bottom: 10px;
